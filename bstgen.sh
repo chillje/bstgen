@@ -16,6 +16,12 @@
 # show all commands on execution (stdout) aka "debug mode"
 #set -vx; set -o functrace
 
+# set options
+# -e | stop after error
+# -u | stop for unbound variables
+# -o pipefail | stop if a command not found
+#set -eo pipefail
+
 # define IAM to have your bashscript name
 IAM="$(basename "${0}")"
 
@@ -122,6 +128,12 @@ EOFA
 
 # show all commands on execution (stdout) aka "debug mode"
 #set -vx; set -o functrace
+
+# set options
+# -e | stop after error
+# -u | stop for unbound variables
+# -o pipefail | stop if a command not found
+#set -eo pipefail
 
 # define IAM to have your bashscript name
 IAM="$(basename "${0}")"
